@@ -151,6 +151,7 @@ const Perfil = () => {
         value={collegeId ?? ""}
         onChange={handleUniversityChange}
         className="form-control form-control-sm mx-auto text-center bg-transparent text-white border-white"
+        style={{ color: "white" }}
       >
         {colleges.map((c) => (
           <option key={c.college_id} value={c.college_id}>{c.name}</option>
@@ -223,7 +224,7 @@ const Perfil = () => {
                       onDislike={() => handleDislike(r.review.review_id)}
                     />
                   </div>
-                  <div className="editar-boton-wrapper d-flex flex-column justify-content-center align-items-center gap-2">
+                  <div className="editar-boton-wrapper d-flex flex-column justify-content-center align-items-center gap-2 row">
                     <button
                       onClick={() =>
                         navigate(`/evaluacion/${r.review.teacher_id}`, {
