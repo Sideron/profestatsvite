@@ -39,6 +39,11 @@
   { "teacher_college_id": 29, "college_id": 1, "teacher_id": 32},
   { "teacher_college_id": 29, "college_id": 1, "teacher_id": 33},
   {
+    "teacher_college_id": 149,
+    "teacher_id": 15,
+    "college_id": 1
+  },
+  {
     "teacher_college_id": 30,
     "teacher_id": 33,
     "college_id": 1

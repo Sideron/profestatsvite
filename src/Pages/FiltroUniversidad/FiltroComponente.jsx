@@ -212,25 +212,25 @@ const FiltroComponente = ({ id, changeTeacherId }) => {
     <div className="d-flex flex-wrap gap-2 mb-4">
       <select className="form-select bg-dark text-white" style={{ width: '48%' }} value={selectedFaculty}
         onChange={updateFaculty}>
-        <option key={0} value={''}>Facultad</option>
+        <option key={0} className="text-white" value={''}>Facultad</option>
         {faculties.map((facultie, index) => (
-          <option key={index} value={facultie.name}>{facultie.name}</option>
+          <option key={index} className="text-white" value={facultie.name}>{facultie.name}</option>
         ))}
       </select>
       <select className="form-select bg-dark text-white" style={{ width: '48%' }} value={selectedCycle} onChange={updateCycle}>
-        <option key={0} value={0}>Ciclo</option>
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(x => <option key={x} value={x}>{x}</option>)}
+        <option key={0} className="text-white" value={0}>Ciclo</option>
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(x => <option key={x} className="text-white" value={x}>{x}</option>)}
       </select>
       <select className="form-select bg-dark text-white" style={{ width: '48%' }} value={selectedLabel} onChange={updateLabel}>
-        <option value={''}>Habilidades</option>
+        <option value={''} className="text-white">Habilidades</option>
         {labels.map((label, index) => (
-          <option key={index} value={label.name}>{label.name}</option>
+          <option key={index} className="text-white" value={label.name}>{label.name}</option>
         ))}
       </select>
       <select className="form-select bg-dark text-white" style={{ width: '48%' }} value={selectedCourse} onChange={updateCourse}>
-        <option value={''}>Cursos</option>
+        <option value={''} className="text-white">Cursos</option>
         {filteredCourses.map((course, index) => (
-          <option key={index} value={course.name}>{course.name}</option>
+          <option key={index} className="text-white" value={course.name}>{course.name}</option>
         ))}
       </select>
     </div>
